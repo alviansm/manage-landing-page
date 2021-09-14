@@ -1,0 +1,22 @@
+{
+  "name": "manage-landing-page",
+  "version": "1.0.0",
+  "description": "Challange from frontedmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "bootstrap",
+    "sass",
+    "scss"
+  ],
+  "author": "alviansm",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
+}
