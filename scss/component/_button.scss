@@ -1,0 +1,8 @@
+@use '../custom' as *;
+
+.btn-primary {
+    border-radius: 50px;
+    background-color: $primary;
+    border-color: transparent;
+    color: #fff;
+}

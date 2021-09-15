@@ -1,0 +1,16 @@
+// Import custom.
+@use './custom';
+
+// Import component.
+@use './component/button';
+@use './component/typograph';
+
+// Import section - landing page.
+@use './section/navbar';
+@use './section/home';
+@use './section/footer';
+
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    max-width: 100vw;
+}

@@ -1,0 +1,8 @@
+@use '../custom' as *;
+
+.section-footer {
+    background-color: $gray-100;
+    border: 0.1px solid $gray-100;
+    padding-top: 1.125rem;
+    padding-bottom: 0;
+}
