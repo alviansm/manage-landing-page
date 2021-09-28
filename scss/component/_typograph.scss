@@ -18,8 +18,21 @@
     font-size: 1.125rem;
     color: $gray-600;
     text-align: justify;
+}  
+
+.typ-li-num {
+    padding: .45rem 1.5rem;
+    border: none;
+    background-color: $primary;
+    color: $white;
+    border-radius: 50px;
+    margin-right: 1.125rem;
 }
 
+.typ-li-head {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
 
 // Media query
 @media only screen and (max-width: 500px) {

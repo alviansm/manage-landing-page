@@ -14,6 +14,7 @@
 
         <link rel="icon" href="./favico.ico">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     </head>
     <body>
         <!-- Navbar Section -->
@@ -65,17 +66,20 @@
                         </p>
                         <button type="button" class="btn btn-primary">Get Started</button>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 stats">
                         <img class="bg-pile" src="./assets/img/bg-tablet-pattern.png">
                         <div class="row d-flex justify-content-center">
                             <div class="shadow col-md-4 stat-container">
                                 <h2>Stat-1</h2>
+                                <p>You could show your custom statistics here</p>
                             </div>
                             <div class="shadow col-md-4 stat-container">
                                 <h2>Stat-2</h2>
+                                <p>You could show your custom statistics here</p>
                             </div>
                             <div class="shadow col-md-4 stat-container">
-                                <h2>Stat-3s</h2>
+                                <h2>Stat-3</h2>
+                                <p>You could show your custom statistics here</p>
                             </div>
                         </div>
                     </div>
@@ -85,7 +89,7 @@
         
         <!-- Feature section. -->
         <section class="section-feature" id="home">
-            <div class="container pt-lg-5 pt-md-4 pt-3">
+            <div class="container pt-lg-4 pt-3">
                 <div class="row">
                     <div class="col-md-6">
                         <h2 class="typ-display-2">
@@ -99,65 +103,85 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <ol>
+                        <ul class="py-3">
                             <li>
-                                <span>
-                                    Track company-wide progress
-                                </span>
-                                <span>
-                                    See how your day-to-day tasks fit into
-                                    the wider vision. Go from tracking at
-                                    the milestone level all way done to the
-                                    smallest of detail. Never lose sight of
-                                    the bigger picture again.
-                                </span>
+                                <div>
+                                    <span class="typ-li-num">1</span>
+                                    <span class="typ-li-head">Track company-wide progress</span>
+                                </div>
+                                <p class="typ-sub-display pt-lg-3 pt-lg-2 pb-lg-4 pb-3">
+                                    See how your day-to-day tasks fit into the wider vision,
+                                    Go from tracking progress at the milestone level all the
+                                    way done to the smallest details. Nevel lose sight of the
+                                    bigger picture again.
+                                </p>
                             </li>
                             <li>
-                                <span>
-                                    Advenced built in report
-                                </span>
-                                <span>
-                                    Set internal delivery estimates and track
-                                    progress toward company goals. Our customisable
-                                    dashboard help you build out the report you need
-                                    to keep key stakeholders informed.
-                                </span>
+                                <div>
+                                    <span class="typ-li-num">2</span>
+                                    <span class="typ-li-head">Advanced built-in reports</span>
+                                </div>
+                                <p class="typ-sub-display pt-lg-3 pt-lg-2 pb-lg-4 pb-3">
+                                    Set internal delivery estimates and track progress toward
+                                    company goals. Our customisable dashboard helps you build
+                                    out the reports you need to keep key stakeholders informed.
+                                </p>
                             </li>
                             <li>
-                                <span>Everything you need in one place</span>>
+                                <div>
+                                    <span class="typ-li-num">3</span>
+                                    <span class="typ-li-head">Everything you need in one place</span>
+                                </div>
+                                <p class="typ-sub-display pt-lg-3 pt-lg-2 pb-lg-4 pb-3">
+                                    Stop jumping from one service to another to communicate, store
+                                    files, track tasks and share documents. Manage offers an all-in-one
+                                    team productivity solution.
+                                </p>
                             </li>
-                        </ol>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="section-testimoni" id="#testimoni">
-            <div class="container pt-lg-5 pt-md-4 pt-3">
+            <div class="container pt-lg-5 pt-md-4 pt-3 swiper">
                 <h2 class="text-center typ-display-2 pb-2">
                     What they've said
                 </h2>
-                <div class="row text-center">
-                    <div class="col-md-4">
+                <div class="text-center swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/avatar/avatar-anisha.png" alt="avatar-anisha">
                         <h3>Anisha Li</h3>
                         <p>"Manage has been supercharged our team's workflow. The mantain visibility
                             on larger milestone at all times keeps everyone motivated."
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/avatar/avatar-ali.png" alt="avatar-anisha">
                         <h3>Ali Bravo</h3>
                         <p>"We have been able to cancel so many other subscriptions since
                             using Manage. There is no more cross-channel confusion and everyone
                             is much more focused."
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/avatar/avatar-richard.png" alt="avatar-anisha">
                         <h3>Richard Watts</h3>
                         <p>"Manage allows us to provide structure and progress to keep us organized
                             and focused. I can't stop recommend them to everyone i talk to!"
                         </p>
                     </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/avatar/avatar-shanai.png" alt="avatar-anisha">
+                        <h3>Shanai Walls</h3>                        
+                        <p>"Manage is gereat tools!"
+                        </p>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
 
@@ -180,14 +204,15 @@
         <section class="section-footer">
             <div class="container">
                 <footer>
-                  <div class="row">
-                    <div class="col-2">
+
+                <div class="row">
+                    <div class="col-md-2">
                         <a class="navbar-brand" href="#">
                             <img src="./assets/img/logo.svg" alt="Manage Logo">
                         </a>
                     </div>
               
-                    <div class="col-2">
+                    <div class="col-md-2">
                       <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
@@ -196,7 +221,7 @@
                       </ul>
                     </div>
               
-                    <div class="col-2">
+                    <div class="col-md-2">
                       <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Careers</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Community</a></li>
@@ -204,7 +229,7 @@
                       </ul>
                     </div>
               
-                    <div class="col-4 offset-1">
+                    <div class="col-md-2 offset-1">
                       <form>
                         <div class="d-flex w-100 gap-2 justify-content-center align-content-center">
                           <label for="newsletter1" class="visually-hidden">Email address</label>
@@ -213,16 +238,38 @@
                         </div>
                       </form>
                     </div>
-                  </div>
-              
+
                   <div class="d-flex justify-content-between py-2 border-top">
                     <p>&copy; 2021 Company, Inc. All rights reserved.</p>
                   </div>
+                </div>
                 </footer>
               </div>
         </section>
 
         <!-- Scripts -->
         <script rel="text/javacsript" src="./assets/vendor/bootstrap/bootstrap.bundle.js"></script>
+        <script rel="text/javsascript" src="./assets/js/swiper-bundle.js"></script>
+        <script rel="text/javascript" src="./assets/js/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                }
+            }
+
+            });
+        </script>
     </body>
 </html>

@@ -1,9 +1,5 @@
 @use '../custom' as *;
 
-.section-home {
-    height: 100vh;
-}
-
 .stat-container{
     z-index: 2;
     width: 186px;
@@ -12,9 +8,10 @@
     background-color: $white;
 }
 
-.col-md-6 {
+.section-home .container .stats {
     overflow: hidden;
-}
+} 
+
 
 .bg-pile {
     z-index: -1;
@@ -29,5 +26,12 @@
     .bg-pile {
         width: 480px;
         height: 480px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .bg-pile {
+        width: 196px;
+        height: 196px;
     }
 }

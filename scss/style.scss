@@ -6,9 +6,11 @@
 @use './component/typograph';
 
 // Import section - landing page.
+@use './section/feature';
 @use './section/navbar';
 @use './section/home';
 @use './section/footer';
+@use './section/testimoni';
 
 body {
     font-family: 'Be Vietnam', sans-serif;
