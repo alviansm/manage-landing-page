@@ -1,2 +1,8 @@
 /node_modules
 /frontendmentor
+/node_modules/*
+/frontendmentor/*
+./node_modules
+./frontendmentor
+./node_modules/*
+./frontendmentor/*

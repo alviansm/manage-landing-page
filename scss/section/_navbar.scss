@@ -1,0 +1,63 @@
+@use '../custom' as *;
+
+.mobile-nav-toggle {
+    color: $bg-primary;
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .btn-header {
+        display: none;
+    }
+}
+.navbar-mobile {
+    position: fixed;
+    top: -5%;
+    left: 0%;
+    bottom: -5%;
+    right: 0%;
+    background-image: linear-gradient(180deg, rgba($color: $white, $alpha: .5), rgba($color: $black, $alpha: .5));
+    transition: 500ms all ease;
+}
+.navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: $white;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+.navbar-mobile > ul > li > a:before {
+    left: 20px;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: $bg-primary;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: $gray-600;
+}

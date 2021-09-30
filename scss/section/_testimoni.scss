@@ -1,7 +1,15 @@
+@use '../custom' as *;
+
 .swiper {
     padding: 1.125rem 1.5rem;
 }
 
 .swiper-wrapper {
     padding-bottom: 2rem;
+}
+
+.section-testimoni {
+    .swiper-slide {
+        background-color: $gray-200;
+    }
 }

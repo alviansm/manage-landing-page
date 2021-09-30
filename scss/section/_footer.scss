@@ -1,8 +1,26 @@
 @use '../custom' as *;
 
-.section-footer {
-    background-color: $gray-100;
-    border: 0.1px solid $gray-100;
+footer {
+    background-color: $bg-primary;
+    border: 0.1px solid $bg-primary;
     padding-top: 1.125rem;
     padding-bottom: 0;
+
+    ul {
+        color: white;
+        li {
+            color: white;
+            font-weight: 500;
+        }
+    }
+
+    div {
+        p {
+            color: $white;
+        }
+    }
+
+    .form-control {
+        border-radius: 50px;
+    }
 }
