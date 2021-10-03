@@ -11178,6 +11178,10 @@ textarea.form-control-lg {
     text-align: justify;
   }
 }
+.section-feature ul {
+  list-style: none;
+}
+
 .mobile-nav-toggle {
   color: #1E1E26;
   font-size: 2rem;
