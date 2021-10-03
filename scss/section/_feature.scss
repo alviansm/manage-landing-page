@@ -1,24 +1,25 @@
 @use '../custom' as *;
 
-.section-feature {
+// .section-feature {
+//     overflow: hidden;
     
-    .container {
-        margin-top: 3.5rem;
-        overflow: hidden;
+//     .container {
+//         margin-top: 3.5rem;
+//         overflow: hidden;
 
-        .pills-container {
-            svg {
-                position: absolute;
-                top: 0%;
-                z-index: -1;
-                top: 135%;
-                left: -40%;
-                transform: scale(.8);
-            }
-        }
-    }
+//         .pills-container {
+//             svg {
+//                 position: fixed;
+//                 top: 0%;
+//                 z-index: -1;
+//                 top: 135%;
+//                 left: -40%;
+//                 transform: scale(.8);
+//             }
+//         }
+//     }
 
-    ul {
-        list-style: none;
-    }
-}
+//     ul {
+//         list-style: none;
+//     }
+// }

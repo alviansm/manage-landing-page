@@ -11178,22 +11178,6 @@ textarea.form-control-lg {
     text-align: justify;
   }
 }
-.section-feature .container {
-  margin-top: 3.5rem;
-  overflow: hidden;
-}
-.section-feature .container .pills-container svg {
-  position: absolute;
-  top: 0%;
-  z-index: -1;
-  top: 135%;
-  left: -40%;
-  transform: scale(0.8);
-}
-.section-feature ul {
-  list-style: none;
-}
-
 .mobile-nav-toggle {
   color: #1E1E26;
   font-size: 2rem;
